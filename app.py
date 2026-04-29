@@ -616,7 +616,7 @@ with tab2:
             return f"background-color:{color}22;color:{color};font-weight:600"
 
         st.dataframe(
-            ent_df.style.applymap(color_type, subset=["Type"]),
+            ent_df.style.map(color_type, subset=["Type"]),
             use_container_width=True, height=420,
             hide_index=True,
         )
